@@ -34,7 +34,6 @@ def daAPI(apisetting):
 
     while True:
         query = click.prompt('Введите адрес или \'exit\' для выхода', type=str)
-        print(apisetting)
         if query != 'exit':
             result = ddt.suggest(name=apisetting[1], query=query, count=apisetting[2], language=apisetting[4])
         else:
